@@ -1,0 +1,9 @@
+mixin socials
+  ul.socials&attributes(attributes)
+    li.socials__list
+      a.socials__list-link(href="https://t.me/+79534980100")
+        +icon-mono("socials_telegram")(class="socials__list-icon" width="24px" height="24px")
+      a.socials__list-link(href="https://wa.me/79534980100")
+        +icon-mono("socials_whatsapp")(class="socials__list-icon" width="24px" height="24px")
+      a.socials__list-link.socials__list-link--tel(href="tel:+79534980100")
+        +icon-mono("socials_phone")(class="socials__list-icon" width="24px" height="24px")

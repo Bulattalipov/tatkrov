@@ -1,0 +1,95 @@
+.footer {
+  display: block;
+  margin-top: 4rem;
+  padding: 16rem 2rem 20rem;
+
+  @include mq(lg) {
+    margin-top: 0;
+    padding: 13rem 2rem 17rem;
+  }
+
+  @include mq(sm) {
+    padding: 8rem 2rem 14rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 23.8rem;
+    height: 5rem;
+    margin-bottom: 5.2rem;
+    object-fit: cover;
+
+    @include mq(lg) {
+      width: 25rem;
+      height: 5rem;
+    }
+
+    @include mq(sm) {
+      width: 20rem;
+      height: 5rem;
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  &__logo-link {
+    display: block;
+  }
+
+  &__address {
+    margin-bottom: 1.2rem;
+    color: #1d1d1d;
+    font-size: 1.6rem;
+    line-height: 1.2;
+
+    @include mq(sm) {
+      margin-bottom: 1.9rem;
+    }
+  }
+
+  &__telephones {
+    margin-bottom: 8.4rem;
+
+    @include mq(sm) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__telephone {
+    @include interactive;
+    color: #1d1d1d;
+    font-size: 1.6rem;
+    line-height: 120%;
+
+    @include mq(sm) {
+      display: block;
+      margin-bottom: 1.6rem;
+    }
+
+    &:not(:first-child) {
+      position: relative;
+      margin-left: 4rem;
+
+      @include mq(sm) {
+        margin-left: 0;
+      }
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: -2rem;
+        transform: translateY(-50%);
+        content: '·';
+
+        @include mq(sm) {
+          display: none;
+        }
+      }
+    }
+  }
+}

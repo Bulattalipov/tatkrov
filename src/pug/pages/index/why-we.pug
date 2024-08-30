@@ -1,0 +1,20 @@
+-
+  whyWeItems = [
+    {urlImg: "assets/images/why-we/warehouse.png", altImg: "Склад", text: "Прямая материально-техническая база"},
+    {urlImg: "assets/images/why-we/settings.png", altImg: "Настройка", text: "2 полностью укомплектованных бригад"},
+    {urlImg: "assets/images/why-we/documentation.png", altImg: "Документ", text: "Наличие всей необходимой разрешительной документации"},
+    {urlImg: "assets/images/why-we/practice.png", altImg: "Профессионалы", text: "Профессиональные работы, соответствующие международным требованиям"},
+    {urlImg: "assets/images/why-we/quality.png", altImg: "Качество", text: "Высокое качество и культура выполнения работ, а также постгарантийное обслуживание"},
+    {urlImg: "assets/images/why-we/quality-service.png", altImg: "Гарантия", text: "Гарантированное выполнение договорных обязательств"}
+  ]
+
+section.why-we(id="why-we")
+  .site-container
+    .why-we__container
+      h2.why-we__title
+        | Почему вам нужно обратиться именно к нам?
+      .why-we__items
+        each item in whyWeItems
+          .why-we__item
+            img.why-we__item-img(src=item.urlImg alt=item.altImg)
+            .why-we__item-text= item.text

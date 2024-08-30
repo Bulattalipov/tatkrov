@@ -1,0 +1,9 @@
+section.works(id="works")
+  .site-container
+    .works__wrapper
+      h2.works__title
+        | Выполненные работы
+      .works__gallery
+        each i in Array.from(Array(18).keys())
+          a.works__galler-link.js-smartPhoto(href=`assets/images/works/${i+1}.jpg`)
+            +imgLazy(`assets/images/works/${i+1}.jpg`, alt="")(class="works__gallery-img")

@@ -1,0 +1,87 @@
+.about-us {
+  padding: 12rem 0;
+
+  @include mq(sm) {
+    padding: 6rem 0;
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+    font-weight: 700;
+    font-size: 5.4rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    @include mq(md) {
+      font-size: 4.2rem;
+    }
+
+    @include mq(sm) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+
+    @include mq(custom, max, 1024) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__list-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    font-size: 3rem;
+    font-weight: 500;
+
+    @include mq(sm) {
+      font-size: 2.4rem;
+    }
+
+    &::before {
+      content: '';
+      position: relative;
+      width: 0.7rem;
+      height: 0.7rem;
+      border-radius: 50%;
+      background-color: #FFC921;
+      flex-shrink: 0;
+    }
+  }
+
+  &__img-wrapper {
+    position: relative;
+    width: 64rem;
+    height: 42.6rem;
+    overflow: hidden;
+    border-radius: 1rem;
+
+    @include mq(lg) {
+      width: 100%;
+      padding-bottom: 56%;
+      height: 100%;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,22 @@
+.modal__container(data-target="modal")
+  .modal__content
+    button.button-reset.modal__close-btn.modal-close(type="button")
+      span
+      span
+    .modal__legend
+      .modal__title
+        | оставить заявку сейчас
+      .modal__text
+        | И мы свяжемся с вами в ближайшее время
+      form.modal__form
+        .input.js-validation-wrapper
+          input.input__element(type="text" placeholder="Имя" name="name" required)
+          span.input__placeholder
+            | Имя
+        .input.js-validation-wrapper
+          input.input__element.js-phone-mask(type="text" placeholder="Телефон" name="phone" required)
+          span.input__placeholder
+            | Телефон
+        button.modal__button(type="submit")
+          | оставить заявку
+

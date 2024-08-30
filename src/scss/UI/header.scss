@@ -1,0 +1,97 @@
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  padding: 3.6rem 0;
+  opacity: 1;
+  backdrop-filter: blur(12px);
+  background: rgba(32, 32, 32, 0.7);
+
+  @include mq(lg) {
+    padding: 1.8rem 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mq(lg) {
+      align-items: center;
+    }
+  }
+
+  &__burger {
+    position: relative;
+    z-index: 5;
+    display: none;
+    width: 3.2rem;
+    height: 1.6rem;
+    cursor: pointer;
+
+    @include mq(lg) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 4.4rem;
+    }
+
+    @include mq(sm) {
+      margin-left: 2.4rem;
+    }
+  }
+
+  &__burger-line {
+    display: block;
+    width: 100%;
+    height: 0.15rem;
+    background-color: #fff;
+    border-radius: 1rem;
+  }
+
+  &__logo {
+    display: block;
+
+    @include mq(lg) {
+      margin-right: auto;
+    }
+  }
+
+  &__logo-img {
+    width: 23.8rem;
+    height: 5rem;
+
+    @include mq(lg) {
+      width: auto;
+      height: 3.8rem;
+    }
+
+    @include mq(sm) {
+      height: 2.8rem;
+    }
+  }
+
+  &__nav {
+    @include mq(lg) {
+      display: none;
+    }
+  }
+
+  &__telephone {
+    @include interactive;
+    display: block;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    font-size: 1.8rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include mq(lg) {
+      display: none;
+    }
+  }
+}

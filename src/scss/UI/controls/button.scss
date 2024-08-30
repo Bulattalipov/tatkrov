@@ -1,0 +1,21 @@
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 1.75rem 2.4rem 1.85rem;
+  color: #000;
+  font-size: 2rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  background-color: #FFC921;
+  border-radius: 4rem;
+  transition: background-color var(--transition);
+
+  @include mq(sm) {
+    padding: 1.75rem 2.4rem 1.85rem;
+    font-size: 1.4rem;
+  }
+
+  &:hover {
+    background-color: #fcc00d;
+  }
+}

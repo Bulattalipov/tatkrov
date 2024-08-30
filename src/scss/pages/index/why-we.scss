@@ -1,0 +1,155 @@
+.why-we {
+  margin-top: 4rem;
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    min-height: 55rem;
+    padding: 6rem;
+    overflow: hidden;
+    background-color: #FFC921;
+    border-radius: 3.2rem;
+
+    @include mq(lg) {
+      padding: 4rem;
+    }
+
+    @include mq("custom", max, 1060) {
+      flex-direction: column;
+    }
+
+    @include mq(sm) {
+      padding: 4rem 2rem 10rem 2rem;
+    }
+
+    @include mq(xs) {}
+
+    &::before {
+      position: absolute;
+      bottom: -50rem;
+      left: 10rem;
+      width: 81.1rem;
+      height: 80.6rem;
+      background-image: url("../images/why-we/logo.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+
+      @include mq(lg) {
+        bottom: -46rem;
+        left: -21rem;
+        width: 60.1rem;
+        height: 72.6rem;
+      }
+
+      @include mq("custom", max, 1060) {
+        right: -10rem;
+        bottom: -50rem;
+        left: auto;
+        width: 36rem;
+      }
+    }
+  }
+
+  &__icon-svg {
+    position: absolute;
+    bottom: 10.7rem;
+    left: 66rem;
+    width: 28.1rem;
+    height: 42rem;
+    background-size: contain;
+    content: '';
+
+    @include mq(lg) {
+      bottom: 6.7rem;
+      left: 22rem;
+      width: 16.1rem;
+      height: 24rem;
+    }
+
+    @include mq("custom", max, 1060) {
+      right: 4rem;
+      bottom: -2rem;
+      left: auto;
+      width: 11rem;
+    }
+  }
+
+  &__icon-svg-path {
+    filter: drop-shadow(0 0 1.4rem rgb(255 255 255 / 65%));
+  }
+
+  &__title {
+    max-width: 58rem;
+    color: #000;
+    font-weight: 700;
+    font-size: 5.4rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    @include mq(lg) {
+      max-width: 45rem;
+      font-size: 3.8rem;
+    }
+
+    @include mq("custom", max, 1060) {
+      max-width: 70rem;
+      margin-bottom: 4rem;
+    }
+
+    @include mq(sm) {
+      margin-bottom: 3rem;
+      font-size: 3.2rem;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    max-width: 66rem;
+
+    @include mq(lg) {
+      max-width: 40rem;
+      gap: 2rem;
+    }
+
+    @include mq("custom", max, 1060) {
+      max-width: 60rem;
+      gap: 3rem;
+    }
+
+    @include mq(xs) {
+      gap: 2.4rem 1.6rem;
+    }
+  }
+
+  &__item-img {
+    width: 7rem;
+    height: 7rem;
+    margin-bottom: 1.6rem;
+    object-fit: cover;
+
+    @include mq(lg) {
+      width: 5rem;
+      height: 5rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__item-text {
+    color: #000;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.2;
+
+    @include mq(lg) {
+      font-size: 1.8rem;
+    }
+
+    @include mq(sm) {
+      font-size: 1.6rem;
+    }
+  }
+}

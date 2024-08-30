@@ -1,0 +1,51 @@
+-
+  listServices = [
+    {urlImg: "assets/images/services/1.jpg", text: "Установка, замена  приборов учёта"},
+    {urlImg: "assets/images/services/2.jpg", text: "Установка, замена трансформаторов тока"},
+    {urlImg: "assets/images/services/3.jpg", text: "Монтаж и сборка электрощитов"},
+    {urlImg: "assets/images/services/4.jpg", text: "Установка GSM модемов ПУ"},
+    {urlImg: "assets/images/services/5.jpg", text: "Перепрограммирование приборов учёта"},
+    {urlImg: "assets/images/services/6.jpg", text: "Электромонтаж складских, торговых и производственных обектов"},
+    {urlImg: "assets/images/services/7.jpg", text: "Монтаж лотков. Подключение кабельных линий, прокладка кабелей"},
+    {urlImg: "assets/images/services/8.jpg", text: "Электромонтажные работы по проекту "},
+    {urlImg: "assets/images/services/9.jpg", text: "Монтаж КТП, БКТП, РТП"}
+  ]
+
+section.services(id="services")
+  .site-container
+    .services__wrapper
+      h2.services__title
+        | НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ
+      .services__items
+        .services__item
+          .services__item-img-wrapper
+            +imgLazy("assets/images/services/1.jpg", "РЕМОНТ КРОВЛИ")(class="services__item-img")
+          .services__item-text
+            | РЕМОНТ КРОВЛИ
+        .services__item
+          .services__item-img-wrapper
+            +imgLazy("assets/images/services/2.jpg", "РЕКОНСТРУКЦИЯ КРОВЛИ")(class="services__item-img")
+          .services__item-text
+            | РЕКОНСТРУКЦИЯ КРОВЛИ
+        .services__item
+          .services__item-img-wrapper
+            +imgLazy("assets/images/services/3.jpg", "ДЕМОНТАЖ КРОВЛИ")(class="services__item-img")
+          .services__item-text
+            | ДЕМОНТАЖ КРОВЛИ
+        .services__item-empty
+        .services__item-empty
+        .services__item
+          .services__item-img-wrapper
+            +imgLazy("assets/images/services/4.jfif", "МОНТАЖ КРОВЕЛЬНЫХ АКСЕССУАРОВ")(class="services__item-img")
+          .services__item-text
+            | МОНТАЖ КРОВЕЛЬНЫХ АКСЕССУАРОВ #[span (СНЕГОЗАДЕРЖАТЕЛЕЙ, ОГРАЖДЕНИЙ, ВОДОСТОЧНОЙ СИСТЕМЫ)]
+        .services__item
+          .services__item-img-wrapper
+            +imgLazy("assets/images/services/5.jpg", "ОБСЛУЖИВАНИЕ КРЫШ")(class="services__item-img")
+          .services__item-text
+            | ОБСЛУЖИВАНИЕ КРЫШ
+        .services__item
+          .services__item-img-wrapper
+            +imgLazy("assets/images/services/6.jpg", "УДАЛЕНИЕ СНЕГА, НАЛЕДИ, СОСУЛЕК")(class="services__item-img")
+          .services__item-text
+            | УДАЛЕНИЕ СНЕГА, НАЛЕДИ, СОСУЛЕК

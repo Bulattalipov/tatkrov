@@ -1,0 +1,136 @@
+.services {
+  padding: 12rem 0;
+
+  @include mq(sm) {
+    padding: 6rem 0;
+  }
+
+  &__title {
+    margin-bottom: 6rem;
+    font-weight: 700;
+    font-size: 5.4rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    .line {
+      overflow: hidden;
+    }
+
+    @include mq(sm) {
+      margin-bottom: 3rem;
+      font-size: 3.2rem;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6rem 2rem;
+    counter-reset: list;
+
+    @include mq(lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include mq(md) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem 2rem;
+    }
+  }
+
+  &__item-empty {
+    @include mq(lg) {
+      display: none;
+    }
+  }
+
+  &__item-img-wrapper {
+    position: relative;
+    height: 25.2rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border-radius: 1.2rem;
+
+    @include mq(lg) {
+      height: 22rem;
+    }
+
+    @include mq(md) {
+      height: 18rem;
+      margin-bottom: 1.2rem;
+    }
+
+    @include mq(xs) {
+      height: 14rem;
+    }
+
+    @include mq(xxs) {
+      height: 10rem;
+    }
+  }
+
+  &__item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__item-text {
+    position: relative;
+    padding-left: 4.7rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    word-break: break-word;
+
+    @include mq(lg) {
+      padding-left: 3.7rem;
+      font-size: 2rem;
+    }
+
+    @include mq(md) {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+      font-size: 1.4rem;
+    }
+
+    &::before {
+      position: absolute;
+      left: 0;
+      margin-top: 0.4rem;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 1.1;
+      content: counter(list, decimal-leading-zero) "";
+      counter-increment: list;
+
+      @include mq(md) {
+        position: static;
+        margin-bottom: 0.8rem;
+        font-size: 1.4rem;
+      }
+    }
+
+    span {
+      font-weight: 700;
+      font-size: 1.8rem;
+
+      @include mq(lg) {
+        font-size: 1.6rem;
+      }
+
+      @include mq(md) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

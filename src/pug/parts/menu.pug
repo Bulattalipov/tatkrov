@@ -1,0 +1,28 @@
+.menu
+  .site-container
+    .menu__wrapper
+      .menu__top
+        a.header__logo(href="https://ramanta-energy.ru/")
+          img.header__logo-img(src="assets/images/logo.png" alt="Логотип Ramanta-energy")
+        +socials
+        .menu__burger
+          span.menu__burger-line
+          span.menu__burger-line
+      nav.nav.menu__nav
+        ul.nav__list
+          li.nav__list-item
+            a.nav__list-item-link(href="#why-we")
+              | Преимущества
+          li.nav__list-item
+            a.nav__list-item-link(href="#services")
+              | Услуги
+          li.nav__list-item
+            a.nav__list-item-link(href="#works")
+              | Работы
+          li.nav__list-item
+            a.nav__list-item-link(href="#how-order")
+              | Этапы работ
+          li.nav__list-item
+            a.nav__list-item-link(href="#footer")
+              | Контакты
+      +socials(class="menu__footer")
