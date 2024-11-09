@@ -1,0 +1,40 @@
+.clear {
+  &__title {
+    margin-bottom: 6rem;
+    font-weight: 700;
+    font-size: 5.4rem;
+    line-height: 1.2;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem
+  }
+
+  &__item {
+
+  }
+
+  &__item-img {
+    position: relative;
+    height: 27rem;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 4px rgba(112, 121, 138, .24), 0 4px 8px rgba(112, 121, 138, .32);
+  }
+
+  &__item-img-elem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__item-text {
+    font-size: 2.4rem;
+  }
+}
