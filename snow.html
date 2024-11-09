@@ -13,7 +13,6 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <title>Таткров - Зима | Кровельные работы</title>
-    <link href="https://cdn.jsdelivr.net/gh/Alaev-Co/snowflakes/dist/snow.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.min.css?v=0.0.0.0">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <div class="menu">
@@ -142,7 +141,9 @@
 
       <main class="page-main main">
         <section class="section snow">
-          <img class="snow__img" src="assets/images/snow/img-snow-bg.jpg" alt="Уборка снега с крыши">
+          <video class="snow__img" autoplay muted loop>
+            <source src="assets/roof.mp4" type="video/mp4">
+          </video>
           <div class="site-container">
             <div class="snow__inner">
               <div class="snow__left">
@@ -152,7 +153,38 @@
             </div>
           </div>
         </section>
-        <section class="section stages">
+        <section class="section clear">
+          <div class="site-container">
+            <h2 class="clear__title">Чистим от снега объекты Казани любой сложности</h2>
+            <div class="clear__inner">
+              <div class="clear__item">
+                <div class="clear__item-img">
+                  <img class="clear__item-img-elem" src="assets/images/clear/img-1.jpg" alt="">
+                </div>
+                <div class="clear__item-text">Частные дома и коттеджи</div>
+              </div>
+              <div class="clear__item">
+                <div class="clear__item-img">
+                  <img class="clear__item-img-elem" src="assets/images/clear/img-2.jpg" alt="">
+                </div>
+                <div class="clear__item-text">Торговые и бизнес центры</div>
+              </div>
+              <div class="clear__item">
+                <div class="clear__item-img">
+                  <img class="clear__item-img-elem" src="assets/images/clear/img-3.jpg" alt="">
+                </div>
+                <div class="clear__item-text">Жилые комплексы</div>
+              </div>
+              <div class="clear__item">
+                <div class="clear__item-img">
+                  <img class="clear__item-img-elem" src="assets/images/clear/img-4.jpg" alt="">
+                </div>
+                <div class="clear__item-text">Складские комплексы</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section stages" style="background-image: url('assets/images/stages/city-kazan.jpg')">
           <div class="site-container">
             <h2 class="stages__title">Этапы</h2>
             <div class="stages__inner">
@@ -160,7 +192,7 @@
                 <thead class="stages__table-thead">
                   <tr class="stages__table-row">
                     <th>Шаг:</th>
-                    <th>Этап<span>и даты</span>:</th>
+                    <th>Этап:</th>
                   </tr>
                 </thead>
                 <tbody class="stages__table-tbody">
@@ -228,7 +260,6 @@
           <div class="site-container">
             <h2 class="gallery__title">Галерея</h2>
             <div class="gallery__inner">
-              <div class="gallery__title"></div>
               <div class="gallery__slider swiper simple-slider">
                 <div class="swiper-wrapper gallery__slider-wrapper">
                   <div class="swiper-slide gallery__slider-item">
@@ -239,6 +270,33 @@
                   </div>
                   <div class="swiper-slide gallery__slider-item">
                     <img class="gallery__slider-item-img" src="assets/images/gallery/img-3.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide gallery__slider-item">
+                    <img class="gallery__slider-item-img" src="assets/images/gallery/img-4.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide gallery__slider-item">
+                    <img class="gallery__slider-item-img" src="assets/images/gallery/img-5.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide gallery__slider-item">
+                    <img class="gallery__slider-item-img" src="assets/images/gallery/img-6.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide gallery__slider-item">
+                    <img class="gallery__slider-item-img" src="assets/images/gallery/img-7.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide gallery__slider-item">
+                    <img class="gallery__slider-item-img" src="assets/images/gallery/img-8.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide gallery__slider-item">
+                    <img class="gallery__slider-item-img" src="assets/images/gallery/img-9.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide gallery__slider-item">
+                    <img class="gallery__slider-item-img" src="assets/images/gallery/img-10.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide gallery__slider-item">
+                    <img class="gallery__slider-item-img" src="assets/images/gallery/img-11.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide gallery__slider-item">
+                    <img class="gallery__slider-item-img" src="assets/images/gallery/img-12.jpeg" alt="">
                   </div>
                 </div>
                 <div class="swiper-nav">
@@ -328,7 +386,6 @@
     </div>
 
   </body>
-  <script src="https://cdn.jsdelivr.net/gh/Alaev-Co/snowflakes/dist/Snow.min.js"></script>
   <script>
     new Snow();
   </script>
