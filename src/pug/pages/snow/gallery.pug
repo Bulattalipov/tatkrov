@@ -1,0 +1,22 @@
+section.section.gallery
+  .site-container
+    h2.gallery__title Галерея
+    .gallery__inner
+      .gallery__title
+      .gallery__slider.swiper.simple-slider
+        .swiper-wrapper.gallery__slider-wrapper
+          .swiper-slide.gallery__slider-item
+            img.gallery__slider-item-img(src="assets/images/gallery/img-1.jpeg", alt="")
+          .swiper-slide.gallery__slider-item
+            img.gallery__slider-item-img(src="assets/images/gallery/img-2.jpeg", alt="")
+          .swiper-slide.gallery__slider-item
+            img.gallery__slider-item-img(src="assets/images/gallery/img-3.jpeg", alt="")
+        .swiper-nav
+          .swiper-nav__pagination
+          .swiper-nav__nav
+            .swiper-nav__nav-btn.swiper-nav__nav-prev
+              svg.icon.icon-icon__angle-left(width="20px", height="20px")
+                use(xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-left")
+            .swiper-nav__nav-btn.swiper-nav__nav-next
+              svg.icon.icon-icon__angle-left(width="20px", height="20px")
+                use(xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-left")

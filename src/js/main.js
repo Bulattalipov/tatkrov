@@ -7,6 +7,7 @@ import onMenuToggle from './modules/onMenuToggle';
 import phoneMask from './helpers/phoneMask';
 import imgGallery from './modules/imgGallery';
 import smoothScroll from './helpers/smoothScroll';
+import simpleSlider from './modules/simple-slider';
 import loadingPage from './modules/loadingPage';
 
 documenReady(() => {
@@ -19,6 +20,7 @@ documenReady(() => {
   imgGallery();
   smoothScroll();
   // loadingPage();
+  simpleSlider();
 });
 
 $(function () {

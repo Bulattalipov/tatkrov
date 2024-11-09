@@ -91,6 +91,7 @@
 		"inputmask": "5.0.7",
 		"reset-css": "^5.0.1",
 		"smartphoto": "1.6.4",
+		"swiper": "8.4.4",
 		"vanilla-lazyload": "^17.6.1"
 	}
 }

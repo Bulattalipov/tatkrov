@@ -57,7 +57,7 @@
     padding: 1.6rem 0 1.2rem;
     color: var(--color-grayscale-300);
     font: var(--font-common-placeholder);
-    border-bottom: 0.1rem solid rgb(255 255 255 / 30%);
+    border-bottom: 0.1rem solid var(--color-dark);
     resize: none;
 
     @include placeholder() {
