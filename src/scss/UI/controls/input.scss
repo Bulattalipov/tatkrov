@@ -16,10 +16,10 @@
   select:-webkit-autofill,
   select:-webkit-autofill:hover,
   select:-webkit-autofill:focus {
-    border: 1px solid #2C852A;
-    border-bottom: 0.1rem solid rgb(255 255 255 / 30%);
-    -webkit-text-fill-color: #fff;
-    -webkit-box-shadow: 0 0 0px 1000px #2C852A inset;
+    border: 1px solid #FFC921;
+    border-bottom: 0.1rem solid #000;
+    -webkit-text-fill-color: #000;
+    -webkit-box-shadow: 0 0 0px 1000px #FFC921 inset;
     transition: background-color 500000s ease-in-out 0s;
   }
 
@@ -40,15 +40,22 @@
     top: calc(100% + 0.5rem);
   }
 
+  &--checkbox {
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+  }
+
   &__placeholder {
     position: absolute;
-    top: 0;
+    top: -5px;
     right: 0;
     left: 0;
     font: var(--font-common-label-3);
     transform: translateY(0);
     transition: var(--transition);
     pointer-events: none;
+    color: gray;
   }
 
   &__element {
@@ -69,6 +76,8 @@
     &:placeholder-shown~.input__placeholder {
       font: var(--font-common-label-1);
       transform: translateY(2.2rem);
+      top: 0px;
+      color: #000;
 
       @include mq(sm) {
         font: var(--font-common-label-2);
@@ -117,5 +126,17 @@
   &.textarea {
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
+  }
+
+
+  &__checkbox {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__label {
+    a {
+      text-decoration: underline;
+    }
   }
 }

@@ -17,6 +17,10 @@
           input.input__element.js-phone-mask(type="text" placeholder="Телефон" name="phone" required)
           span.input__placeholder
             | Телефон
+        .input.input--checkbox.js-validation-wrapper
+          input.input__checkbox(type="checkbox" name="approval" required)
+          .input__label Нажимая на кнопку, я даю согласие на&nbsp;
+            a(href="/policy-applications.html" target="_blank") обработку персональных данных
         button.modal__button(type="submit")
           | оставить заявку
 

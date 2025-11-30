@@ -1,5 +1,4 @@
 import gsap from "gsap";
-import SplitText from '../../assets/js/gsap-bonus/SplitText';
 import {
   ScrollTrigger
 } from "gsap/dist/ScrollTrigger";

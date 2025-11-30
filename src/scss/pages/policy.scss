@@ -1,0 +1,48 @@
+.privacy-policy {
+  margin-top: 180px;
+  font-size: 16px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+
+    @include mq(lg) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    @include mq(md) {
+      font-size: 4.2rem;
+    }
+
+    @include mq(sm) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__button {
+    margin: 60px auto 0;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  tbody {
+    td {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+  }
+}

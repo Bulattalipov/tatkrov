@@ -8,6 +8,7 @@ html(lang=siteLang)
   head
     include ../parts/head.pug
     include ../parts/menu.pug
+    include ../parts/cookie.pug
   body(class=bodyClass)
     .page-wrapper
       block header
@@ -22,7 +23,6 @@ html(lang=siteLang)
       include ../parts/modals/modal.pug
 
   block scripts
-    //- script(src="https://cdn.jsdelivr.net/gh/Alaev-Co/snowflakes/dist/Snow.min.js")
-    <script>new Snow ();</script>
+    script(src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js")
     script(src="assets/js/main.js?v=" + siteVersion)
     script(src="assets/js/backend.js?v=" + siteVersion)

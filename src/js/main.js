@@ -9,6 +9,7 @@ import imgGallery from './modules/imgGallery';
 import smoothScroll from './helpers/smoothScroll';
 import simpleSlider from './modules/simple-slider';
 import loadingPage from './modules/loadingPage';
+import cookie from './modules/cookie';
 
 documenReady(() => {
   window.___YOUR_PROJECT___API = {};
@@ -21,6 +22,7 @@ documenReady(() => {
   smoothScroll();
   // loadingPage();
   simpleSlider();
+  cookie();
 });
 
 $(function () {
